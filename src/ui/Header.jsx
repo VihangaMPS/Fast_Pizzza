@@ -1,14 +1,15 @@
 import {Link} from "react-router-dom";
 import SearchOrder from "../features/order/SearchOrder.jsx";
+import Username from "../features/user/Username.jsx";
 
 function Header() {
     return (
-        <header>
-            <Link to="/">Fast React Pizza Co.</Link>
+        <header className="bg-yellow-500 uppercase px-4 py-3 border-b-4 border-stone-300">
+            <Link to="/" className='tracking-widest'>Fast React Pizza Co.</Link>
 
             <SearchOrder/>
 
-            <p>Jonas</p>
+            <Username/>
         </header>
     );
 }
